@@ -29,7 +29,7 @@
   var map = L.map('map', {
     center: [47.999863, 7.846345], // EDIT coordinates to re-center map
     zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
-    scrollWheelZoom: false
+    scrollWheelZoom: true
   });
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
@@ -42,7 +42,7 @@
 
   /* Display a point marker with pop-up text */
   L.marker([47.999863, 7.846345]).addTo(map) // EDIT marker coordinates
-  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+  .bindPopup("test message"); // EDIT pop-up text message
 
   </script>
 </body>
